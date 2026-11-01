@@ -50,10 +50,10 @@ function Payment() {
           headline="Thank you! Your payment details have been submitted successfully."
           note="Important: Payment submission does not mean payment verification. Final confirmation will be communicated by the organizing team."
           summary={[
-            ["Registration", `${done.v.registration_type} · ${done.v.registration_id}`],
-            ["Name", String(done.v.name_team_brand)],
-            ["Amount", `INR ${done.v.amount_paid}`],
-            ["UTR", String(done.v.transaction_id_utr)],
+            ["Registration", `${done.v["registration_type"]} · ${done.v["registration_id"]}`],
+            ["Name", String(done.v["name_team_brand"])],
+            ["Amount", `INR ${done.v["amount_paid"]}`],
+            ["UTR", String(done.v["transaction_id_utr"])],
           ]}
         >
           <p>Our team will verify the transaction and update your registration status. You will receive a confirmation once the payment has been verified.</p>

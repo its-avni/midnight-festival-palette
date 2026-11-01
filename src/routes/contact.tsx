@@ -66,9 +66,9 @@ function Contact() {
                 id={done.id}
                 idLabel="Message Reference"
                 headline="Message sent. We'll be in touch."
-                summary={[["Category", String(done.v.query_category)], ["Subject", String(done.v.subject)]]}
+                summary={[["Category", String(done.v["query_category"])], ["Subject", String(done.v["subject"])]]}
               >
-                <p>Thank you for reaching out, {String(done.v.full_name)}. Our team will get back to you at {String(done.v.email_address)}.</p>
+                <p>Thank you for reaching out, {String(done.v["full_name"])}. Our team will get back to you at {String(done.v["email_address"])}.</p>
               </Confirmation>
             ) : (
               <FormEngine fields={fields} submitLabel="Send Message" idPrefix="MSG" onDone={(id, v) => setDone({ id, v })} />

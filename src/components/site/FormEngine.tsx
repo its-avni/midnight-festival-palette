@@ -68,7 +68,7 @@ export function FormEngine({
   const [values, setValues] = useState<Values>({});
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [busy, setBusy] = useState(false);
-  const set = (k: string, v: Values[string]) => {
+  const set = (k: string, v: Values[string] | undefined) => {
     setValues((p) => ({ ...p, [k]: v }));
     setErrors((p) => {
       const { [k]: _, ...rest } = p;

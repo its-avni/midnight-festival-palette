@@ -60,10 +60,10 @@ function Volunteer() {
           idLabel="Volunteer ID"
           headline="Thank You for Showing Interest in Joining North Folk Festival 2027!"
           summary={[
-            ["Name", String(done.v.full_name)],
-            ["City", String(done.v.city)],
-            ["Interests", (done.v.areas_of_interest as string[]).join(", ")],
-            ["Availability", (done.v.availability as string[]).join(", ")],
+            ["Name", String(done.v["full_name"])],
+            ["City", String(done.v["city"])],
+            ["Interests", (done.v["areas_of_interest"] as string[]).join(", ")],
+            ["Availability", (done.v["availability"] as string[]).join(", ")],
           ]}
         >
           <p>We have received your volunteer application. Our team will review your details and get in touch with you regarding selection, responsibilities, orientation, and further instructions.</p>

@@ -20,7 +20,7 @@ export const Route = createFileRoute("/faq")({
 function Faq() {
   const [cat, setCat] = useState<FaqCategory | "All">("All");
   const [q, setQ] = useState("");
-  const [open, setOpen] = useState<string | null>(faqs[0].q);
+  const [open, setOpen] = useState<string | null>(faqs[0]?.q ?? null);
   const list = useMemo(() => {
     const s = q.trim().toLowerCase();
     return faqs.filter((f) => (cat === "All" || f.c === cat) && (!s || (f.q + f.a).toLowerCase().includes(s)));

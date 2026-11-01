@@ -68,10 +68,10 @@ function Exhibit() {
           idLabel="Exhibitor ID"
           headline="Thank You for Your Interest!"
           summary={[
-            ["Brand", String(done.v.brand_name)],
-            ["Contact", String(done.v.contact_person_name)],
-            ["Category", String(done.v.business_category)],
-            ["Stall", `${done.v.preferred_stall_category} · ${done.v.preferred_stall_size}`],
+            ["Brand", String(done.v["brand_name"])],
+            ["Contact", String(done.v["contact_person_name"])],
+            ["Category", String(done.v["business_category"])],
+            ["Stall", `${done.v["preferred_stall_category"]} · ${done.v["preferred_stall_size"]}`],
           ]}
         >
           <p>Your exhibitor application has been received successfully.</p>

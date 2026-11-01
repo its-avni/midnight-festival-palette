@@ -39,7 +39,7 @@ function Participate() {
   const [done, setDone] = useState<{ id: string; v: Record<string, unknown> } | null>(null);
 
   if (done) {
-    const members = String(done.v.team_members_details ?? "").split("\n").filter((l) => l.trim()).length;
+    const members = String(done.v["team_members_details"] ?? "").split("\n").filter((l) => l.trim()).length;
     return (
       <Section className="pt-36">
         <Confirmation
@@ -48,10 +48,10 @@ function Participate() {
           headline="Your Journey Starts Here!"
           note="Note: Submission of the registration form does not automatically guarantee selection for the main competition."
           summary={[
-            ["Competition", String(done.v.select_competition)],
-            ["Team", String(done.v.team_name)],
-            ["Team Leader", String(done.v.team_leader_name)],
-            ["Members", `${done.v.total_team_members} declared · ${members} listed`],
+            ["Competition", String(done.v["select_competition"])],
+            ["Team", String(done.v["team_name"])],
+            ["Team Leader", String(done.v["team_leader_name"])],
+            ["Members", `${done.v["total_team_members"]} declared · ${members} listed`],
           ]}
         >
           <p>Thank you for registering for North Folk Festival 2027.</p>
