@@ -87,7 +87,7 @@ function Home() {
             <Reveal className="lg:col-span-8">
               <span className="stencil bg-crimson text-foreground">#CHAK_DE_PHATTE</span>
               <span className="stencil ml-2 rotate-[1.5deg] bg-teal text-background">#NATI_ROCKS</span>
-              <h1 className="mt-6 text-[3.4rem] font-extrabold leading-[0.9] sm:text-7xl lg:text-[7.5rem]">
+              <h1 className="mt-6 text-[3.4rem] font-extrabold leading-[1.1] sm:text-7xl lg:text-[6rem]">
                 Bringing the <br />
                 <span className="text-kesar">Culture</span> Alive.
               </h1>
@@ -133,7 +133,7 @@ function Home() {
         <div className="grid gap-12 lg:grid-cols-12">
           <Reveal className="lg:col-span-5">
             <p className="eyebrow">02 / The Social Pind</p>
-            <h2 className="mt-4 text-4xl font-extrabold leading-[0.95] md:text-5xl">A Place Where People, Culture & Stories Come Together.</h2>
+            <h2 className="mt-4 text-4xl font-extrabold leading-[1.1] md:text-5xl">A Place Where People, Culture & Stories Come Together.</h2>
           </Reveal>
           <Reveal delay={100} className="space-y-5 text-lg leading-relaxed text-body lg:col-span-6 lg:col-start-7">
             <p>The Social Pind is more than just an event platform. It is a celebration of culture, creativity, community, and connection.</p>
@@ -155,7 +155,7 @@ function Home() {
             </Reveal>
             <Reveal delay={100}>
               <p className="eyebrow">03 / The Festival</p>
-              <h2 className="mt-4 text-4xl font-extrabold leading-[0.95] md:text-5xl">Introducing North Folk Festival 2027</h2>
+              <h2 className="mt-4 text-4xl font-extrabold leading-[1.1] md:text-5xl">Introducing North Folk Festival 2027</h2>
               <p className="mt-4 font-display text-xl font-bold text-kesar">Three Days. Countless Stories. One Celebration.</p>
               <div className="mt-6 space-y-4 leading-relaxed text-body">
                 <p>North Folk Festival is a three-day celebration of North India's rich folk traditions, bringing together talented performers, cultural enthusiasts, artists, brands, and communities.</p>
@@ -234,7 +234,7 @@ function Home() {
         <Container className="relative">
           <Reveal className="max-w-4xl">
             <p className="eyebrow">06 / The Call</p>
-            <h2 className="mt-4 text-5xl font-extrabold leading-[0.92] md:text-8xl">The Pind Is Calling. <span className="text-kesar">Are You In?</span></h2>
+            <h2 className="mt-4 text-5xl font-extrabold leading-[1.1] md:text-8xl">The Pind Is Calling. <span className="text-kesar">Are You In?</span></h2>
             <p className="mt-8 max-w-xl text-lg leading-relaxed text-body">Be part of something bigger. Celebrate culture, create memories, and experience the spirit of North India.</p>
             <Button asChild variant="kesar" size="xl" className="mt-10"><Link to="/participate">Register Now <ArrowRight /></Link></Button>
           </Reveal>

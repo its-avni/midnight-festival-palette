@@ -93,7 +93,7 @@ function Participate() {
         <div className="grid gap-8 lg:grid-cols-12">
           <aside className="space-y-4 lg:col-span-4 lg:sticky lg:top-24 lg:self-start">
             <p className="eyebrow">Team Registration</p>
-            <h2 className="text-4xl font-extrabold leading-[0.95]">Before you begin</h2>
+            <h2 className="text-4xl font-extrabold leading-[1.1]">Before you begin</h2>
             {[
               { I: ShieldCheck, t: "Category rules", d: "Choose one competition per registration. Teams entering both Bhangra and Himachali Nati should submit two separate forms." },
               { I: Camera, t: "Team photograph", d: "A clear, recent group photo of the registered team, in JPG or PNG format." },

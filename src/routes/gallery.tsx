@@ -80,7 +80,7 @@ function Gallery() {
       <Section className="pt-0">
         <Reveal className="tile-static flex flex-col gap-6 bg-navy-deep/40 p-8 md:flex-row md:items-center md:justify-between md:p-12">
           <div className="max-w-2xl">
-            <h2 className="text-4xl font-extrabold leading-[0.95]">Stay Connected. Stay Inspired.</h2>
+            <h2 className="text-4xl font-extrabold leading-[1.1]">Stay Connected. Stay Inspired.</h2>
             <p className="mt-4 leading-relaxed text-body">Follow The Social Pind on social media for festival announcements, artist updates, registration information, behind-the-scenes content, and exclusive glimpses of North Folk Festival.</p>
           </div>
           <Button asChild variant="kesar" size="xl"><a href="#" target="_blank" rel="noreferrer"><Instagram strokeWidth={1.5} /> Follow Us on Instagram</a></Button>

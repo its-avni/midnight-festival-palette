@@ -69,7 +69,7 @@ function Festival() {
               </Reveal>
               <Reveal delay={100}>
                 <span className={`stencil ${day.color}`}>{day.tag}</span>
-                <h3 className="mt-5 text-4xl font-extrabold leading-[0.95] md:text-5xl">{day.title}</h3>
+                <h3 className="mt-5 text-4xl font-extrabold leading-[1.1] md:text-5xl">{day.title}</h3>
                 <p className="mt-6 leading-relaxed text-body">{day.d}</p>
                 <ul className="mt-6 grid gap-2.5">
                   {day.h.map((x) => (
@@ -129,7 +129,7 @@ function Festival() {
 
       <Section>
         <Reveal className="max-w-3xl">
-          <h2 className="text-5xl font-extrabold leading-[0.95] md:text-6xl">Be There When Culture Takes Centre Stage.</h2>
+          <h2 className="text-5xl font-extrabold leading-[1.1] md:text-6xl">Be There When Culture Takes Centre Stage.</h2>
           <p className="mt-6 text-lg leading-relaxed text-body">Join us for three days of performances, traditions, music, and unforgettable experiences.</p>
           <Button asChild variant="kesar" size="xl" className="mt-8"><Link to="/participate">Register / Explore Participation <ArrowRight /></Link></Button>
         </Reveal>

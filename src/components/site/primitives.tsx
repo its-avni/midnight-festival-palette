@@ -58,7 +58,7 @@ export function SectionHeader({
   return (
     <Reveal className={cn("mb-12", className)}>
       <div className="flex flex-col gap-4 border-b border-border pb-6 md:flex-row md:items-end md:justify-between">
-        <h2 className="max-w-3xl text-4xl font-extrabold leading-[0.95] md:text-5xl">{title}</h2>
+        <h2 className="max-w-3xl text-4xl font-extrabold leading-[1.1] md:text-5xl">{title}</h2>
         <span className="eyebrow shrink-0 border-l border-border pl-4">
           {index} / {category}
         </span>
@@ -86,7 +86,7 @@ export function PageBanner({
       <div className="relative mx-auto max-w-7xl px-5 md:px-8">
         <Reveal>
           <span className="eyebrow">{eyebrow}</span>
-          <h1 className="mt-5 max-w-5xl text-5xl font-extrabold leading-[0.95] md:text-7xl">{title}</h1>
+          <h1 className="mt-5 max-w-5xl text-5xl font-extrabold leading-[1.1] md:text-7xl">{title}</h1>
           {sub && <p className="mt-8 max-w-2xl text-lg leading-relaxed text-body md:text-xl">{sub}</p>}
           {children}
         </Reveal>

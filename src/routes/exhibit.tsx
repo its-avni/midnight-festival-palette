@@ -125,7 +125,7 @@ function Exhibit() {
         <div className="grid gap-10 lg:grid-cols-2">
           <Reveal>
             <p className="eyebrow">03 / Stalls</p>
-            <h2 className="mt-3 text-4xl font-extrabold leading-[0.95] md:text-5xl">Find the Right Space for Your Brand.</h2>
+            <h2 className="mt-3 text-4xl font-extrabold leading-[1.1] md:text-5xl">Find the Right Space for Your Brand.</h2>
             <p className="mt-6 leading-relaxed text-body">We offer exhibition opportunities across multiple categories to accommodate different types of businesses and brands. The available stall packages, sizes, facilities, and pricing will be shared with interested exhibitors.</p>
             <p className="mt-6 flex gap-2 font-mono text-xs uppercase tracking-wider text-parchment">
               <Info size={14} className="shrink-0" /> All stall specifications, inclusions, and prices will be updated after finalization by the organizing team.
@@ -143,7 +143,7 @@ function Exhibit() {
         <div className="grid gap-8 lg:grid-cols-12">
           <aside className="lg:col-span-4 lg:sticky lg:top-24 lg:self-start">
             <p className="eyebrow">04 / Application</p>
-            <h2 className="mt-3 text-4xl font-extrabold leading-[0.95]">Register Your Brand</h2>
+            <h2 className="mt-3 text-4xl font-extrabold leading-[1.1]">Register Your Brand</h2>
             <p className="mt-4 leading-relaxed text-body">Interested in exhibiting at North Folk Festival? Share your business details and our team will get in touch with you.</p>
           </aside>
           <div className="lg:col-span-8">
