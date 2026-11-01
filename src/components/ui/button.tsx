@@ -18,7 +18,7 @@ const buttonVariants = cva(
         link: "text-primary underline-offset-4 hover:underline",
         kesar:
           "bg-kesar text-background font-semibold hover:bg-kesar-hover active:scale-[0.98] transition-all",
-        navy: "bg-navy text-foreground font-semibold hover:bg-navy-deep active:scale-[0.98] transition-all",
+        navy: "bg-purple text-foreground font-semibold hover:bg-purple/85 active:scale-[0.98] transition-all",
         line: "border border-foreground/25 text-foreground font-semibold hover:border-kesar hover:text-kesar active:scale-[0.98] transition-all",
       },
       size: {
