@@ -129,7 +129,7 @@ function FieldControl({
   f: FieldDef;
   value: Values[string] | undefined;
   set: (k: string, v: Values[string] | undefined) => void;
-  error?: string;
+  error?: string | undefined;
 }) {
   let control: ReactNode;
   const common = { id: f.name, name: f.name, "aria-invalid": !!error, className: cn("field", error && "border-destructive") };
