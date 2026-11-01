@@ -11,8 +11,18 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AboutRouteImport } from './routes/about'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as ExhibitRouteImport } from './routes/exhibit'
+import { Route as FaqRouteImport } from './routes/faq'
 import { Route as FestivalRouteImport } from './routes/festival'
+import { Route as GalleryRouteImport } from './routes/gallery'
 import { Route as ParticipateRouteImport } from './routes/participate'
+import { Route as PaymentRouteImport } from './routes/payment'
+import { Route as PrivacyRouteImport } from './routes/privacy'
+import { Route as RefundRouteImport } from './routes/refund'
+import { Route as SponsorsRouteImport } from './routes/sponsors'
+import { Route as TermsRouteImport } from './routes/terms'
+import { Route as VolunteerRouteImport } from './routes/volunteer'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -24,9 +34,29 @@ const AboutRoute = AboutRouteImport.update({
   path: '/about',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ExhibitRoute = ExhibitRouteImport.update({
+  id: '/exhibit',
+  path: '/exhibit',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FaqRoute = FaqRouteImport.update({
+  id: '/faq',
+  path: '/faq',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const FestivalRoute = FestivalRouteImport.update({
   id: '/festival',
   path: '/festival',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GalleryRoute = GalleryRouteImport.update({
+  id: '/gallery',
+  path: '/gallery',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ParticipateRoute = ParticipateRouteImport.update({
@@ -34,39 +64,152 @@ const ParticipateRoute = ParticipateRouteImport.update({
   path: '/participate',
   getParentRoute: () => rootRouteImport,
 } as any)
+const PaymentRoute = PaymentRouteImport.update({
+  id: '/payment',
+  path: '/payment',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PrivacyRoute = PrivacyRouteImport.update({
+  id: '/privacy',
+  path: '/privacy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RefundRoute = RefundRouteImport.update({
+  id: '/refund',
+  path: '/refund',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SponsorsRoute = SponsorsRouteImport.update({
+  id: '/sponsors',
+  path: '/sponsors',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TermsRoute = TermsRouteImport.update({
+  id: '/terms',
+  path: '/terms',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const VolunteerRoute = VolunteerRouteImport.update({
+  id: '/volunteer',
+  path: '/volunteer',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/contact': typeof ContactRoute
+  '/exhibit': typeof ExhibitRoute
+  '/faq': typeof FaqRoute
   '/festival': typeof FestivalRoute
+  '/gallery': typeof GalleryRoute
   '/participate': typeof ParticipateRoute
+  '/payment': typeof PaymentRoute
+  '/privacy': typeof PrivacyRoute
+  '/refund': typeof RefundRoute
+  '/sponsors': typeof SponsorsRoute
+  '/terms': typeof TermsRoute
+  '/volunteer': typeof VolunteerRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/contact': typeof ContactRoute
+  '/exhibit': typeof ExhibitRoute
+  '/faq': typeof FaqRoute
   '/festival': typeof FestivalRoute
+  '/gallery': typeof GalleryRoute
   '/participate': typeof ParticipateRoute
+  '/payment': typeof PaymentRoute
+  '/privacy': typeof PrivacyRoute
+  '/refund': typeof RefundRoute
+  '/sponsors': typeof SponsorsRoute
+  '/terms': typeof TermsRoute
+  '/volunteer': typeof VolunteerRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/contact': typeof ContactRoute
+  '/exhibit': typeof ExhibitRoute
+  '/faq': typeof FaqRoute
   '/festival': typeof FestivalRoute
+  '/gallery': typeof GalleryRoute
   '/participate': typeof ParticipateRoute
+  '/payment': typeof PaymentRoute
+  '/privacy': typeof PrivacyRoute
+  '/refund': typeof RefundRoute
+  '/sponsors': typeof SponsorsRoute
+  '/terms': typeof TermsRoute
+  '/volunteer': typeof VolunteerRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/about' | '/festival' | '/participate'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/contact'
+    | '/exhibit'
+    | '/faq'
+    | '/festival'
+    | '/gallery'
+    | '/participate'
+    | '/payment'
+    | '/privacy'
+    | '/refund'
+    | '/sponsors'
+    | '/terms'
+    | '/volunteer'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/about' | '/festival' | '/participate'
-  id: '__root__' | '/' | '/about' | '/festival' | '/participate'
+  to:
+    | '/'
+    | '/about'
+    | '/contact'
+    | '/exhibit'
+    | '/faq'
+    | '/festival'
+    | '/gallery'
+    | '/participate'
+    | '/payment'
+    | '/privacy'
+    | '/refund'
+    | '/sponsors'
+    | '/terms'
+    | '/volunteer'
+  id:
+    | '__root__'
+    | '/'
+    | '/about'
+    | '/contact'
+    | '/exhibit'
+    | '/faq'
+    | '/festival'
+    | '/gallery'
+    | '/participate'
+    | '/payment'
+    | '/privacy'
+    | '/refund'
+    | '/sponsors'
+    | '/terms'
+    | '/volunteer'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
+  ContactRoute: typeof ContactRoute
+  ExhibitRoute: typeof ExhibitRoute
+  FaqRoute: typeof FaqRoute
   FestivalRoute: typeof FestivalRoute
+  GalleryRoute: typeof GalleryRoute
   ParticipateRoute: typeof ParticipateRoute
+  PaymentRoute: typeof PaymentRoute
+  PrivacyRoute: typeof PrivacyRoute
+  RefundRoute: typeof RefundRoute
+  SponsorsRoute: typeof SponsorsRoute
+  TermsRoute: typeof TermsRoute
+  VolunteerRoute: typeof VolunteerRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -85,11 +228,39 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AboutRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/exhibit': {
+      id: '/exhibit'
+      path: '/exhibit'
+      fullPath: '/exhibit'
+      preLoaderRoute: typeof ExhibitRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/faq': {
+      id: '/faq'
+      path: '/faq'
+      fullPath: '/faq'
+      preLoaderRoute: typeof FaqRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/festival': {
       id: '/festival'
       path: '/festival'
       fullPath: '/festival'
       preLoaderRoute: typeof FestivalRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/gallery': {
+      id: '/gallery'
+      path: '/gallery'
+      fullPath: '/gallery'
+      preLoaderRoute: typeof GalleryRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/participate': {
@@ -99,14 +270,66 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ParticipateRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/payment': {
+      id: '/payment'
+      path: '/payment'
+      fullPath: '/payment'
+      preLoaderRoute: typeof PaymentRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/privacy': {
+      id: '/privacy'
+      path: '/privacy'
+      fullPath: '/privacy'
+      preLoaderRoute: typeof PrivacyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/refund': {
+      id: '/refund'
+      path: '/refund'
+      fullPath: '/refund'
+      preLoaderRoute: typeof RefundRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sponsors': {
+      id: '/sponsors'
+      path: '/sponsors'
+      fullPath: '/sponsors'
+      preLoaderRoute: typeof SponsorsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/terms': {
+      id: '/terms'
+      path: '/terms'
+      fullPath: '/terms'
+      preLoaderRoute: typeof TermsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/volunteer': {
+      id: '/volunteer'
+      path: '/volunteer'
+      fullPath: '/volunteer'
+      preLoaderRoute: typeof VolunteerRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
+  ContactRoute: ContactRoute,
+  ExhibitRoute: ExhibitRoute,
+  FaqRoute: FaqRoute,
   FestivalRoute: FestivalRoute,
+  GalleryRoute: GalleryRoute,
   ParticipateRoute: ParticipateRoute,
+  PaymentRoute: PaymentRoute,
+  PrivacyRoute: PrivacyRoute,
+  RefundRoute: RefundRoute,
+  SponsorsRoute: SponsorsRoute,
+  TermsRoute: TermsRoute,
+  VolunteerRoute: VolunteerRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
