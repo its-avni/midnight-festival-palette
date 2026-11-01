@@ -39,7 +39,7 @@ function About() {
           </Reveal>
           <Reveal delay={100}>
             <p className="eyebrow">01 / Our Story</p>
-            <h2 className="mt-4 text-4xl font-extrabold leading-[0.95] md:text-5xl">Rooted in Culture. Driven by Community.</h2>
+            <h2 className="mt-4 text-4xl font-extrabold leading-[1.1] md:text-5xl">Rooted in Culture. Driven by Community.</h2>
             <div className="mt-8 space-y-4 text-lg leading-relaxed text-body">
               <p>The Social Pind was envisioned as a platform to bring people together through the power of culture, creativity, and shared experiences.</p>
               <p>In a world that is constantly evolving, we believe that our traditions, art forms, music, and cultural identities deserve to be celebrated, preserved, and experienced by future generations.</p>
@@ -77,7 +77,7 @@ function About() {
       <Section className="pt-0">
         <Reveal className="tile-static flex flex-col gap-8 p-8 md:flex-row md:items-end md:justify-between md:p-12">
           <div className="max-w-2xl">
-            <h2 className="text-4xl font-extrabold leading-[0.95] md:text-5xl">Every Culture Has a Story. Let's Celebrate Yours.</h2>
+            <h2 className="text-4xl font-extrabold leading-[1.1] md:text-5xl">Every Culture Has a Story. Let's Celebrate Yours.</h2>
             <p className="mt-5 text-lg leading-relaxed text-body">Join The Social Pind and become part of a growing community that celebrates traditions, talent, and togetherness.</p>
           </div>
           <Button asChild variant="kesar" size="xl"><Link to="/festival">Explore Our Events <ArrowRight /></Link></Button>

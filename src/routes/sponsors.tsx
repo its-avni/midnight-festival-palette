@@ -45,7 +45,7 @@ function Sponsors() {
                 <span className="font-mono text-xs text-parchment">{String(i + 1).padStart(2, "0")}</span>
               </div>
               <div>
-                <h3 className={big ? "text-4xl font-extrabold leading-[0.95]" : "text-2xl font-bold"}>{t}</h3>
+                <h3 className={big ? "text-4xl font-extrabold leading-[1.1]" : "text-2xl font-bold"}>{t}</h3>
                 <div className="mt-4 grid h-12 place-items-center rounded-md border border-dashed border-border font-mono text-[0.65rem] uppercase tracking-wider text-body/60">Partner logo</div>
               </div>
             </Reveal>

@@ -112,7 +112,7 @@ function Volunteer() {
         <div className="grid gap-8 lg:grid-cols-12">
           <aside className="lg:col-span-4 lg:sticky lg:top-24 lg:self-start">
             <p className="eyebrow">03 / Application</p>
-            <h2 className="mt-3 text-4xl font-extrabold leading-[0.95]">Join the Volunteer Team</h2>
+            <h2 className="mt-3 text-4xl font-extrabold leading-[1.1]">Join the Volunteer Team</h2>
             <p className="mt-4 leading-relaxed text-body">Tell us a little about yourself and how you would like to contribute.</p>
           </aside>
           <div className="lg:col-span-8">

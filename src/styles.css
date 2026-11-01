@@ -10,7 +10,7 @@
  */
 
 @theme inline {
-  --font-display: "Syne", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Shrikhand", cursive, system-ui;
   --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, monospace;
 
@@ -53,6 +53,9 @@
   --color-teal: var(--slate-teal);
   --color-crimson: var(--kullu-crimson);
   --color-success: var(--success);
+  --color-sun: var(--sun-gold);
+  --color-purple: var(--pahadi-pine);
+  --color-meadow: var(--success);
 }
 
 :root {
@@ -69,13 +72,15 @@
   --text-secondary: #cbd5e1;
   --text-muted: #f2c9a1;
 
-  --kesar-gold: #e09f3e;
-  --kesar-hover: #c88b32;
-  --terracotta: #c8522c;
-  --pahadi-pine: #1f7a6e;
-  --slate-teal: #2ca58d;
-  --kullu-crimson: #a82642;
-  --success: #2ea043;
+  /* Festival palette */
+  --kesar-gold: #f07d23;   /* Marigold Orange — primary CTAs, active states */
+  --kesar-hover: #d96a14;
+  --kullu-crimson: #d81e73; /* Festive Fuchsia — badges, tag pills */
+  --sun-gold: #fbb017;      /* Sun Gold — alerts, hover accents */
+  --slate-teal: #00a3da;    /* Electric Turquoise — links, timeline nodes, icons */
+  --pahadi-pine: #732e87;   /* Deep Folk Purple — card borders, secondary buttons */
+  --success: #55a546;       /* Meadow Green — success, live tags */
+  --terracotta: #bd3233;    /* Crimson Clay — urgency, warnings */
 
   /* shadcn mapping */
   --background: var(--bg-base);
@@ -111,10 +116,14 @@
     color: var(--color-foreground);
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
+    line-height: 1.65;
+    letter-spacing: -0.011em;
   }
-  h1, h2, h3, h4 {
+  h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-display);
-    letter-spacing: -0.02em;
+    font-weight: 400;
+    font-synthesis: none;
+    letter-spacing: 0.015em;
   }
   ::selection {
     background: var(--kesar-gold);
@@ -124,13 +133,16 @@
 
 @utility font-display {
   font-family: var(--font-display);
+  font-weight: 400;
+  font-synthesis: none;
 }
 
 @utility eyebrow {
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  font-weight: 500;
-  letter-spacing: 0.14em;
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--text-muted);
 }
