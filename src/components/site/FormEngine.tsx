@@ -69,7 +69,7 @@ export function FormEngine({
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [busy, setBusy] = useState(false);
   const set = (k: string, v: Values[string] | undefined) => {
-    setValues((p) => ({ ...p, [k]: v }));
+    setValues((p) => ({ ...p, [k]: v ?? null }));
     setErrors((p) => {
       const { [k]: _, ...rest } = p;
       return rest;
@@ -127,8 +127,8 @@ function FieldControl({
   error,
 }: {
   f: FieldDef;
-  value: Values[string];
-  set: (k: string, v: Values[string]) => void;
+  value: Values[string] | undefined;
+  set: (k: string, v: Values[string] | undefined) => void;
   error?: string;
 }) {
   let control: ReactNode;
